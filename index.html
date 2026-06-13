@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>家事代行サービス おざ</title>
+<meta name="description" content="掃除・片付け・整理収納の家事代行サービス「おざ」。スポット1時間から、定期訪問も。毎回同じスタッフがお伺いします。">
+<meta property="og:title" content="家事代行サービス おざ">
+<meta property="og:description" content="掃除・片付け・整理収納の家事代行。スポット1時間からお気軽にどうぞ。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="step.jpg">
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: -apple-system, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif; background: #FDFAF6; color: #3A3028; }
@@ -40,7 +45,7 @@ body { font-family: -apple-system, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',
 .svc-price { font-size: 14px; font-weight: 500; color: #3A3028; white-space: nowrap; margin-left: 1rem; }
 
 .profile { display: flex; gap: 1.2rem; align-items: flex-start; }
-.avatar { width: 52px; height: 52px; border-radius: 50%; background: #EDE0D0; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 500; color: #8B6D4E; flex-shrink: 0; }
+.avatar { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
 .pname { font-size: 15px; font-weight: 500; color: #3A3028; margin-bottom: 4px; }
 .psub { font-size: 12px; color: #A8967E; margin-bottom: 0.7rem; }
 .pbio { font-size: 13px; color: #7A6E63; line-height: 1.9; }
@@ -52,6 +57,10 @@ body { font-family: -apple-system, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',
 
 .contact { text-align: center; padding: 2.5rem 1.25rem 0; }
 .contact p { font-size: 13px; color: #7A6E63; line-height: 1.9; margin-bottom: 1.4rem; }
+.notes { list-style: none; margin-top: 1.2rem; }
+.notes li { font-size: 13px; color: #A8967E; line-height: 1.9; padding-left: 18px; position: relative; }
+.notes li::before { content: ''; position: absolute; left: 2px; top: 11px; width: 5px; height: 5px; border-radius: 50%; background: #A8967E; }
+
 .line-btn { display: inline-flex; align-items: center; gap: 8px; background: #06C755; color: #fff; font-size: 13px; font-weight: 500; padding: 11px 30px; border-radius: 24px; border: none; cursor: pointer; text-decoration: none; }
 </style>
 </head>
@@ -59,7 +68,7 @@ body { font-family: -apple-system, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',
 <div class="p">
 
   <div class="hero" style="position:relative;">
-    <img class="hero-img" src="step.jpg" alt="step">
+    <img class="hero-img" src="step.jpg" alt="木の温もりのある室内に置かれた階段とスツール">
     <div style="position:absolute; top:0; left:0; width:100%; height:200px; background:rgba(253,244,232,0.2); pointer-events:none;"></div>
     <div class="hero-text">
       <div class="eyebrow">家事代行サービス</div>
@@ -117,29 +126,26 @@ body { font-family: -apple-system, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',
   <div class="sec">
     <div class="sec-label">料金</div>
     <div class="svc-list">
-      <div class="svc-row" style="border-bottom:none;">
+      <div class="svc-row" style="border-bottom:none; align-items:center;">
         <div>
           <div class="svc-name">スポットお伺い</div>
-          <div class="svc-note">1時間から</div>
         </div>
         <div class="svc-price">¥4,000</div>
       </div>
-      <div class="svc-row" style="border-bottom:none; padding-bottom:0.3rem;">
+      <div class="svc-row" style="border-bottom:none; align-items:center;">
         <div>
           <div class="svc-name">定期お伺い</div>
-          <div class="svc-note">2時間から</div>
         </div>
-        <div class="svc-price"><span style="font-size:13px; color:#A8967E; margin-right:10px;">週1</span>¥3,500</div>
-      </div>
-      <div class="svc-row">
-        <div></div>
-        <div class="svc-price"><span style="font-size:13px; color:#A8967E; margin-right:10px;">隔週</span>¥3,800</div>
+        <div style="display:flex; flex-direction:column; gap:6px; text-align:right;">
+          <div class="svc-price"><span style="font-size:13px; color:#A8967E; margin-right:10px;">週1</span>¥3,500</div>
+          <div class="svc-price"><span style="font-size:13px; color:#A8967E; margin-right:10px;">隔週</span>¥3,800</div>
+        </div>
       </div>
     </div>
-    <p style="font-size:13px; color:#A8967E; margin-top:1.2rem;">全プラン　１時間あたり　交通費別途</p>
-  </div>
-
-  <div class="sec" style="display:none;">
+    <ul class="notes">
+      <li>全プラン1時間あたり、交通費別途となります</li>
+      <li>スポットは1時間から、定期は2時間から承ります</li>
+    </ul>
   </div>
 
   <div class="sec">
@@ -176,17 +182,17 @@ body { font-family: -apple-system, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',
   <div class="sec">
     <div class="sec-label">ギャラリー</div>
     <div class="gallery">
-      <img class="gallery-img" src="gas.jpg" alt="ガスコンロ" style="height: 200px; object-position: 85% 85%;">
-      <img class="gallery-img" src="sink.jpg" alt="シンク" style="height: 200px;">
+      <img class="gallery-img" src="gas.jpg" alt="磨き上げられたガスコンロ" style="height: 200px; object-position: 85% 85%;">
+      <img class="gallery-img" src="sink.jpg" alt="清掃後の光沢のあるキッチンシンク" style="height: 200px;">
       <div style="display:flex; gap:4px;">
         <div style="border-radius: 8px; overflow: hidden; height: 240px; background: #EDE0D0; flex: 0 0 42%;">
-          <img src="toilet.jpg" alt="トイレ" style="width: 100%; height: 240px; object-fit: cover; object-position: 60% center;">
+          <img src="toilet.jpg" alt="清掃済みの清潔なトイレ" style="width: 100%; height: 240px; object-fit: cover; object-position: 60% center;">
         </div>
         <div style="flex: 1; border-radius: 8px; overflow: hidden; height: 240px;">
-          <img src="bath.jpg" alt="浴室" style="width: 100%; height: 240px; object-fit: cover; object-position: center; transform: scale(1.15); transform-origin: center;">
+          <img src="bath.jpg" alt="水垢を落としてきれいになった浴室" style="width: 100%; height: 240px; object-fit: cover; object-position: center; transform: scale(1.15); transform-origin: center;">
         </div>
       </div>
-      <img class="gallery-img" src="bedroom.jpg" alt="寝室" style="height: 240px; object-position: center 35%;">
+      <img class="gallery-img" src="bedroom.jpg" alt="整えられた寝室" style="height: 240px; object-position: center 35%;">
     </div>
   </div>
 
